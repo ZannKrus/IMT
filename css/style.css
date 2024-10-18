@@ -1,0 +1,85 @@
+/* Сброс стандартных отступов браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+.container {
+    max-width: 400px; /* Ограничение ширины */
+    margin: 0 auto; /* Центрирование на странице */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header img {
+    margin-right: 10px;
+}
+
+/* Поля ввода и кнопка */
+.input-div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.2rem;
+    }
+
+    input, button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}
